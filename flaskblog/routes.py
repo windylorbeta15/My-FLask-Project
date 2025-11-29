@@ -31,6 +31,11 @@ posts = [
 def home():
     return render_template('home.html', posts=posts)
 
+@app.route("/users")
+def users():
+    users = User.query.all()
+    return render_template("users.html", users=users)
+
 
 @app.route("/about")
 def about():
