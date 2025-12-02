@@ -8,11 +8,7 @@
       <p class="text-secondary">{{ current_user.email }}</p>
     </div>
   </div>
-<<<<<<< HEAD
         <form action="" method="POST" enctype="multipart/form-data">
-=======
-        <form action="" method="POST">
->>>>>>> 95e53cfc61b1f41dc6af3b0b90c82ba23e776b30
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Account Info</legend>
@@ -43,7 +39,6 @@
                             {{ form.email(class="form-control form-control-lg") }}                              
                         {% endif%}
                 </div>
-<<<<<<< HEAD
                   <div class="form-group">
                       {{ form.picture.label() }}
                       {{ form.picture(class="form-control-file") }}
@@ -53,8 +48,6 @@
                             {% endfor %}
                       {% endif %}
                   </div>
-=======
->>>>>>> 95e53cfc61b1f41dc6af3b0b90c82ba23e776b30
             </fieldset>
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}
